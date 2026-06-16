@@ -1,0 +1,189 @@
+#port{
+   padding:0;
+}
+
+/* <------LOGO------> */
+#logo{
+position: relative;
+height:100;
+left: 75;
+padding-bottom: 10px;
+padding-top: 10px;
+}
+
+
+
+/* <------início de navbar------> */
+#navbar{
+   position: fixed;
+   z-index: 10;
+   width: 100%;
+   transition: all 0.4s ease; /* Transição suave */
+  background-color: white;
+  z-index: 1000;
+}
+
+
+.navbar img {
+  height: 80px;
+}
+
+.navbar.compacto img {
+  height: 40px;
+}
+
+
+
+
+#pq1 {
+  font-weight: bold; 
+   text-decoration: none;
+  transition: all 0.4s;
+  color: rgb(0, 0, 0);
+  font-size:30;
+   border-radius: 60px;
+}
+#pq1:hover {
+  text-decoration: underline;
+   color: rgb(253, 247, 163);
+}
+#pq1-cont{ padding-inline: 25px;
+padding-left: 125;
+} 
+
+
+
+#pq2 {
+  font-weight: bold; 
+ text-decoration: none;
+  transition: all 0.4s;
+  color: rgb(0, 0, 0);
+  font-size:30;
+   border-radius: 60px;
+}
+#pq2:hover {
+  text-decoration: underline;
+   color: rgb(253, 247, 163);
+} 
+#pq2-cont{ padding-inline: 25px;
+} 
+
+
+
+#pq3 {
+  font-weight: bold; 
+  text-decoration: none;
+  transition: all 0.4s;
+  color: rgb(0, 0, 0);
+  font-size:30;
+  border-radius: 60px;
+}
+#pq3:hover {
+  text-decoration: underline;
+   color: rgb(253, 247, 163);
+}
+#pq3-cont{ padding-inline: 25px;
+} 
+
+
+.dropdown {
+  position: relative;
+   display: block
+}
+
+
+
+/* Style the dropdown button */
+.dropbtn {
+  border-radius: 20;
+  background-color: #0f0f0f;
+  color: rgb(0, 0, 0);
+  padding: 2px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Dropdown content- não tirar */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 200px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside dropdown content- não tirar*/
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+}
+  
+
+
+/* Show the dropdown content on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Change background color of dropdown button on hover */
+.dropdown:hover .dropbtn {
+  background-color: #8B0000;;
+  color:#FFC72C;
+}
+
+/* <------FIM DO NAVBAR ------>*/
+
+
+
+/<------iníciodoorpo------>/
+
+.body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+   margin:0;
+   padding:0;
+}
+
+.carousel-item{
+
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}  
+/<------FIM DO CORPO------>/
+
+
+.card-container {
+  display: flex;
+  gap: 20px; /* Espaço entre os cards */
+  flex-wrap: wrap; /* Para quebra de linha em telas menores */
+}
+
+.card {
+  width: 300px; /* Largura fixa do card */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden; /* Garante que a imagem não saia da borda */
+  display: flex;
+  flex-direction: column;
+}
+
+.card img {
+  width: 100%;
+  height: 200px; /* Altura fixa para todos os cards */
+  object-fit: cover; /* A MÁGICA: Corta/preenche sem distorcer */
+  object-position: center; /* Centraliza o foco do corte */
+}
+
+.card-content {
+  padding: 15px;
+}
